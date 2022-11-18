@@ -1,0 +1,631 @@
+*{
+    box-sizing: border-box;
+}
+@media(max-width:1000px ) {
+    .offer_title{
+        font-size: 36px;
+        max-width: 350px;
+        color: red;
+    }
+}
+body{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    font-style: normal;
+}
+.center {
+    padding-left: calc(50vw - 585px);
+    padding-right: calc(50vw - 585px);
+
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Oswald", serif;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    background:#2d5e5e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    border-color: transparent ;
+}
+.button:hover {
+    background:rgba(0,0,0,0);
+    border: 2px solid #2d5e5e;
+    border-radius: 10px;
+}
+.on_white:hover {
+    color: #2d5e5e;
+}
+/***********************  Header  *************/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+.nav_list {
+    display: flex;
+    flex-wrap:wrap;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+    list-style: none ;
+}
+.nav__list_link {
+    color: #adddde;
+    text-decoration: none ;
+}
+.nav__list_link:hover {
+    color: #6de1e3;
+    text-decoration: underline ;
+}
+/****************** Offer ******************/
+.offer{
+    background-image: url("../imgMarin/photo-to-main-offer.jpg");
+    padding-top: 241px;
+    padding-bottom: 161px;
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size:cover;
+}
+.offer__title{
+    margin: 0 0 55px;
+    color: #fff;
+    font-size: 48px;
+    max-width: 454px;
+    line-height: 1.5;
+}
+.offer__desc{
+    font-size: 24px;
+    color: #fff;
+    max-width: 300px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0 0 55px;
+}
+/**************** Services ****************************/
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 37px;
+    padding-left: calc(50vw - 540px);
+    background: #fff;
+    gap: 90px;
+}
+.services__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width:300px ;
+    height: 234px;
+    text-align: center;
+}
+.services__icon {
+    height: 56px;
+    margin-bottom: 30px;
+}
+.services__title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #2d5e5e;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.services__desc {
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/******************  About me  ***************/
+.aboutMe {
+    display: flex;
+    flex-wrap:wrap;
+    background-image: url("../imgMarin/Rectangle.jpg");
+    background-color: transparent;
+    width: 100%;
+    height:450px;
+    gap: 50px;
+}
+.aboutMe__preview {
+    width: 625px;
+    height: 330px;
+    margin-top: 60px ;
+    margin-bottom: 60px;
+    margin-left: calc(50vw - 585px);
+    color: #fff;
+}
+.aboutMe__preview__title {
+    height: 54px;
+    font-size: 36px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 35px;
+}
+.aboutMe__preview__desc {
+
+    height: 150px;
+    font-weight: 700;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+.aboutMe__button-set  {
+    display:flex;
+    margin-left: 0;
+}
+.aboutMe__button-set__button {
+    margin-right: 30px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.aboutMe__photo  {
+    align-self: center;
+}
+/**************** Input ****************/
+.appointment {
+    height: 572px;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+}
+.appointment__title {
+    font-size: 48px;
+    line-height: 72px;
+    color: #000;
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+.form__fieldset {
+    height: 180px;
+    width: 774px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    border: none;
+    margin-left: calc(50vw - 387px);
+    margin-bottom: 47px;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000;
+}
+.form__set.left_set {
+    width: 372px;
+    height: 180px;
+    margin-left: 3px;
+}
+.form__set.right_set {
+    width: 372px;
+    height: 180px;
+}
+.form__set__input {
+    margin-bottom: 30px;
+}
+.input {
+    width: 369px;
+    height: 40px;
+    padding-left: 21px;
+    padding-top: 8px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.form__set__select.select {
+    width: 369px;
+    height: 40px;
+    padding-left: 21px;
+    padding-top: 8px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.textarea {
+    width: 372px;
+    height: 180px;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin-right: 0;
+    padding-top: 8px;
+    padding-left: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+/*******************   Style checkbox  ************/
+.form__check {
+    display: flex;
+    width:327px ;
+    height: 30px;
+    margin-left: calc(50vw - 164px);
+    margin-bottom: 48px;
+}
+.form__checkbox__input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    zoom: 38%;
+    margin-left: -164px;
+}
+.form__checkbox_label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #2d5e5e;
+}
+.form__checkbox__input  + .form__checkbox_label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.form__checkbox__input  + .form__checkbox_label:before{
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 1px;
+    width: 11px;
+    height: 11px;
+    border: 2px solid #fff;
+    background: #2d5e5e;
+    transition: 0.3s;
+}
+.form__checkbox__input  + .form__checkbox_label:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #2d5e5e;
+    transition: 0.3s;
+}
+.form__checkbox__input:checked + .form__checkbox_label:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border: 1px solid #2d5e5e;
+}
+.form__checkbox__input:checked + .form__checkbox_label:after {
+    background: #fff;
+}
+.disposed {
+    margin-left: calc(50vw - 125px);
+    margin-right: calc(50vw - 125px);
+}
+/******************* Price  ******************/
+.price {
+    display: grid;
+    height: 306px;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: space-around;
+    padding: 60px 88px 60px 88px;
+    background-image: url("../imgMarin/country.jpg");
+    color: #fff;
+}
+.price__title-number {
+    display: block;
+    text-align: center ;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+.price__title-time {
+    display: block;
+    text-align: center ;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.price__description{
+    display: block;
+    text-align: center ;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-top:  0;
+}
+/********************** Reviews ***********************/
+.reviews {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.reviews__title {
+    margin: 0 0 50px;
+    font-size: 48px;
+    text-align: center;
+}
+.reviews__slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 43px;
+}
+.reviews__slides_list {
+    max-width: 600px;
+}
+.reviews__slide_item {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 32px;
+    padding: 20px 25px;
+}
+.reviews__slide_item.reviews__slide_item--active {
+    display: flex;
+}
+.reviews__slide_item:nth-child(even) {
+    background: #205e5e;
+}
+.reviews__slide_item:nth-child(odd) {
+    background: #adddde;
+}
+.reviews__slides_avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow:hidden;
+}
+.reviews__slides_avatar img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+.reviews__slide_name {
+    font-size: 18px;
+    line-height: 1.35;
+    color: #205e5e ;
+    margin: 0 ;
+}
+.reviews__slide_text {
+    margin: 0;
+    text-align: center ;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.reviews__slide_item:nth-child(even) .reviews__slide_name,
+.reviews__slide_item:nth-child(even) .reviews__slide_text{
+    color: #fff;
+}
+.reviews__arrow {
+    background: none ;
+    border: none ;
+    padding: 0;
+    width:24px ;
+    display: flex;
+    justify-content: center;
+    cursor: pointer ;
+    color: #adddde ;
+}
+.reviews__arrow:hover {
+    color:  #205e5e;
+}
+.reviews__arrow .material-symbols-outlined {
+    max-width: 16px;
+}
+/********************** Services--articles ****************/
+.services--articles {
+    background: url("../imgMarin/counter_bg.jpg"),rgba(0,0,0,0.7)  ;
+    background-blend-mode:overlay ;
+    color:#fff ;
+    gap: 50px;
+}
+.services_header {
+    font-size: 48px;
+    width: 100%;
+    margin: 0 0 50px;
+}
+.services__items  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 325px;
+    margin-top: -50px;
+    padding: 0;
+}
+.services__img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 24px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.services__titles {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+/*******************  FAQ  ****************/
+.faq {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.faq__title {
+    text-align: center ;
+    font-size: 48px;
+    margin: 0 0 79px;
+}
+.accordion {
+    margin: 0 auto 20px;
+    max-width: 940px;
+    padding-left: 36px;
+}
+.accordion__toggle {
+    font-family: "Oswald",sans-serif ;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+
+}
+.accordion__toggle::-webkit-details-marker,
+.accordion__toggle::marker {
+    display: none;
+    font-size: 0;
+}
+.accordion__toggle:before,
+.accordion__toggle:after {
+    content: "";
+    position: absolute;
+/*    display: block;  - for handmade cross  */
+    display: none;    /***** !!!!! for SVG CROSS ****/
+    width: 20px;
+    height: 3px;
+    background: #000;
+    border-radius: 5px;
+    left: -36px;
+    top: 50%;
+    transform: translateY(-50%) ;
+}
+.accordion__toggle:after {
+    transform:translateY(-50%) rotate(90deg) ;
+}
+.accordion[open] {
+    margin-bottom: 40px;
+}
+.accordion[open] .accordion__toggle {
+    color: #205e5e;
+}
+.accordion[open] .accordion__toggle:before,
+.accordion[open] .accordion__toggle:after {
+    background: #205e5e ;
+    transform: translate(-50%) rotate(45deg) ;
+}
+.accordion[open] .accordion__toggle:after {
+    transform: translate(-50%) rotate(135deg) ;
+}
+.accordion[open] .accordion__toggle svg {
+    transform: rotate(45deg) ;
+}
+.accordion[open] .accordion__toggle svg {
+    fill: #205e5e;
+}
+.accordion__toggle svg {
+    fill: #000;
+    position: absolute;
+    left: -36px;
+    transform: translate(0%) ;
+    top: 25%;
+}
+/******************* Contacts  **************/
+.contacts {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    position: relative;
+}
+.contacts__map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center ;
+    left: 0;
+    top: 0;
+}
+.contacts__content  {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    margin-left: auto;
+    background: #adddde ;
+    max-width: 477px;
+}
+.contacts__title {
+    font-size: 48px;
+    color: #205e5e;
+    margin: 0 0 20px;
+}
+.contacts__list {
+    margin: 0;
+    padding: 0;
+    list-style: none ;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contacts__link{
+    color: #000;
+    text-decoration: none;
+}
+/***************************  SALE  **************/
+.form {
+    display: block;
+}
+.sale__title {
+    text-align: center ;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+}
+.form.form__sale {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+.button.last {
+    width: 370px;
+    border-color: transparent ;
+    cursor: pointer ;
+}
+.button.last:hover {
+    width: 370px;
+    border: 2px solid #205e5e;
+}
+.label_last {
+    display: inline-flex;
+    margin-left: -145px;
+    margin-bottom: 60px;
+    margin-top: -25px;
+}
+.check_bottom {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/***********************8  Footer  ******************/
+.footer {
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #205e5e;
+    gap: 50px;
+}
+.footer__nav {
+    list-style: none ;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+.footer__link {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.footer__link:hover {
+    text-decoration: underline ;
+}
